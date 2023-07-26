@@ -1,0 +1,114 @@
+/* AboutMe.css */
+
+/* Agregamos estilos específicos para el contenedor principal del componente */
+#about-me {
+    /* Estilos si los necesitas */
+  }
+  
+  /* Estilos para el contenedor flexible */
+  .ContainerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .ContainerFlex {
+      display: block;
+      padding: 0px 3px;
+    }
+  }
+  
+  /* Estilos para el contenedor de texto */
+  .ContainerText {
+    padding: 0px 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .ContainerText {
+      padding: 0;
+    }
+  }
+  
+  /* Estilos para el título */
+  .Title {
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  .Title p {
+    margin: 0;
+  }
+  
+  .Title p:nth-child(2) {
+    font-size: 55px;
+    background: linear-gradient(to right, #6c63ff, #a44afe);
+    -webkit-background-clip: text !important;
+  }
+  
+  @media (max-width: 768px) {
+    .Title {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .Title p:nth-child(2) {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Estilos para el texto de descripción */
+  .DescriptionText {
+    font-size: 16px;
+    color: #808080;
+    padding-right: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    .DescriptionText {
+      padding-right: 0;
+    }
+  }
+  
+  /* Estilos para el contenedor de íconos de redes sociales */
+  .ContainerIcons {
+    display: flex;
+  }
+  
+  .ContainerIcons img {
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .ContainerIcons {
+      justify-content: center;
+    }
+  }
+  
+  /* Estilos para el contenedor de la imagen */
+  .ContainerImage {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .ContainerImage img {
+    width: 250px;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .ContainerImage {
+      width: 100%;
+      padding: 10px 0;
+      margin: 0 auto;
+    }
+  
+    .ContainerImage img {
+      width: 100%;
+    }
+  }
+  

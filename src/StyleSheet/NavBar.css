@@ -1,0 +1,113 @@
+/* Estilos para el contenedor principal */
+.ContainerNavBar {
+    max-width: 100vw;
+    height: 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #fff;
+  }
+  
+  /* Estilos para el contenedor del logo */
+  .ContainerLogo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ContainerLogo h1,
+  .ContainerLogo h2 {
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+  }
+  
+  .ContainerLogo h1 {
+    font-size: 2rem;
+  }
+  
+  .ContainerLogo h2 {
+    background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Estilos para la imagen del logo */
+  .ImageLogo {
+    width: 90px;
+    padding-right: 20px;
+  }
+  
+  /* Estilos para el contenedor de los elementos de navegación */
+  .ContainerItems {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ContainerItems p {
+    cursor: pointer;
+    padding: 0 13px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  /* Estilos para el botón de contacto */
+  .ContainerItems button {
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #6699ff 0%, #ff3366 100%);
+    padding: 12px 20px;
+    border-radius: 999px;
+    border: none;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el contenedor del botón de hamburguesa */
+  .ContainerBurguer {
+    display: none;
+  }
+  
+  /* Estilos para el icono de hamburguesa */
+  .BurguerMenu {
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    margin: 6px 0;
+  }
+  
+  /* Estilos para el contenedor de elementos de navegación en dispositivos móviles */
+  @media (max-width: 768px) {
+    .ContainerItems.show-menu {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0.3s, opacity 0.3s;
+    }
+  
+    .ContainerItems {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      display: grid; /* Cambiamos a grid en lugar de inline-grid */
+      grid-template-columns: 1fr; /* Opcional: ajusta el número de columnas */
+      gap: 10px; /* Opcional: establece el espacio entre elementos */
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 10px 0 20px 0;
+      width: 100%;
+    }
+  
+    .ContainerItems button {
+      padding: 10px 20px;
+    }
+  
+    .ContainerBurguer {
+      display: block;
+    }
+  }
+  
